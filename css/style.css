@@ -767,12 +767,16 @@ a {
   gap: 4rem
 }
 .contact__information {
-  max-width: 22.5rem
+  max-width: 20.875rem;
+  width: 100%
 }
 .contact__information img {
   max-width: 100%;
   height: 300px;
   width: 100%
+}
+.contact__information img:nth-child(2) {
+  display: none
 }
 .contact__subtitle {
   font-family: HeliosCond;
@@ -1009,7 +1013,7 @@ a {
     padding-bottom: 6.875rem
   }
   .contact__subtitle {
-    font-size: 1.75rem
+    font-size: 1.625rem
   }
   .contact__item a {
     font-size: 1.25rem
@@ -1326,6 +1330,12 @@ a {
     max-width: 100%;
     width: 100%
   }
+  .contact__information img:nth-child(1) {
+    display: none
+  }
+  .contact__information img:nth-child(2) {
+    display: block
+  }
   .contact__main {
     width: 67%
   }
@@ -1375,11 +1385,20 @@ a {
   .benefits__img img:nth-child(3) {
     display: none
   }
+  .benefits__slide {
+    margin-top: 2rem
+  }
   .contact__main {
     width: 100%
   }
   .contact__img {
     display: none
+  }
+}
+@media (max-width:29.99875em) {
+  .cta span,
+  .cta-prev span {
+    font-size: 1.125rem
   }
 }
 @media (max-width:61.99875em) and (min-width:75em) {
@@ -1548,7 +1567,7 @@ a {
     padding-bottom: clamp(2rem ,.2272727273rem + 8.8636363636vw ,6.875rem)
   }
   .contact__subtitle {
-    font-size: clamp(1.75rem ,2.4318181818rem + -.9090909091vw ,2.25rem)
+    font-size: clamp(1.625rem ,2.4772727273rem + -1.1363636364vw ,2.25rem)
   }
   .contact__item a {
     font-size: clamp(1rem ,.9090909091rem + .4545454545vw ,1.25rem)
